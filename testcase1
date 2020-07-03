@@ -1,0 +1,46 @@
+Test Case 1:
+--------------------------------
+INPUT
+--------------------------------
+Name: Ben Gramling
+Classes Taken:
+	CSCI-C241,
+	CSCI-C343,
+	CSCI-C212,
+	CSCI-C200,
+	MATH-M212
+Classes Yet To Take:
+	CSCI-B351; Prereq:CSCI-C343,
+	CSCI-B365; Prereq:None,
+	CSCI-B455; Prereq:MATH-M212,
+	STAT-S350; Prereq:MATH-M212,
+	STAT-S450; Prereq:STAT-S350,
+	MATH-M471; Prereq:None
+Frontload, Backload, or Balance?
+	Balance
+Semesters Left?
+	2
+Next Semester of Enrollment? (Spring or Fall)
+	Fall
+
+--------------------------------
+INTERMEDIARY CALCULATIONS
+--------------------------------
+CSCI-B351: Prereq satisfied: Yes; AGC: 3.16
+CSCI-B365: Prereq satisfied: Yes; AGC: 2.96
+CSCI-B455: Prereq satisfied: Yes; AGC: 3.46 SPRING ONLY
+STAT-S350: Prereq satisfied: Yes; AGC: 2.68
+STAT-S450: Prereq satisfied: No;  AGC: 3.74 SPRING ONLY
+MATH-M471: Prereq satisfied: Yes; AGC: 3.57
+
+--------------------------------
+OUTPUT
+-------------------------------- 
+Fall 1:		SPRING 1:
+STAT-S350	CSCI-B455
+MATH-M471	STAT-S450
+CSCI-B351	CSCI-B365	
+
+Sum: 9.41	Sum: 10.16
+-------------------------------
+
